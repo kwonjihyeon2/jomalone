@@ -8,6 +8,9 @@ body{
 .sec-bg01{
     background-color: #FCF9EE;
 }
+.bolder{
+    font-weight: 900;
+}
 .maintext{
     font-size: 4.8rem;
     margin-bottom: 10px;
@@ -32,7 +35,8 @@ body{
     }
 }
 .sec-bg02{
-    padding: 100px 0;
+    margin: 0 auto;
+    padding: 120px 0;
     background-color: #F9F8F5;
 }
 
@@ -46,6 +50,17 @@ body{
     .img {
         left: 23%;
     }
+    /* /* .width{
+        width: 100%;
+        margin: auto;
+    }
+    .width .col{
+        padding: 0;
+    } */
+    .width .col-md-6 img{
+        width: 100%;
+    }
+    
 }
 @media (max-width: 770px) {
     .subtext {
@@ -58,6 +73,16 @@ body{
         top:7%;
         left: 12%;
     }
+    /* .width .col img{
+        width: auto;
+        margin-bottom: 20px;
+    } */
+    .text{
+        text-align: center !important;
+    }
+    .margin{
+        margin-left: 0 !important;
+    }
 }
 @media (max-width:545px) {
     .padding-commons{
@@ -66,7 +91,6 @@ body{
     }
     .maintext{
         font-size: 4.5rem;
-        font-weight: 900;
     }
     .subtext{
         width: auto;
@@ -83,13 +107,14 @@ body{
     .maintext {
         font-size: 3.5rem;
     }
+    .img {
+        top: 12%;
+        left: 0;
+    }
 }
 @media (max-width: 380px){
     .sec-bg01{
         padding: 3rem 1rem !important;
-    }
-    .img{
-        top: 13%;
     }
     .maintext{
         font-size: 3.3rem;
