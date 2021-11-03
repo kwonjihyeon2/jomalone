@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+
+body{
+    font-family: 'Nanum Myeongjo', serif;
+    background-color: #FCF9EE;
+}
+.sec-bg01{
+    background-color: #FCF9EE;
+}
+.maintext{
+    font-size: 4.8rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.subtext{
+    margin: 0 auto;
+}
+.img{
+    top: 8%;
+    left: 35%;
+    opacity: 1;
+    animation-name: show;
+    animation-duration: 1.8s;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.sec-bg02{
+    padding: 100px 0;
+    background-color: #F9F8F5;
+}
+
+
+@media (max-width:1445px) {
+    .img{
+        left: 32%;
+    }
+}
+@media (max-width: 1025px) {
+    .img {
+        left: 23%;
+    }
+}
+@media (max-width: 770px) {
+    .subtext {
+        width: 65%;
+        margin: 0 auto;
+        text-align: left;
+        word-break: keep-all;
+    }
+    .img {
+        top:7%;
+        left: 12%;
+    }
+}
+@media (max-width:545px) {
+    .padding-commons{
+        padding: 5% !important;
+        margin: 5% !important;
+    }
+    .maintext{
+        font-size: 4.5rem;
+        font-weight: 900;
+    }
+    .subtext{
+        width: auto;
+    }
+    .img {
+        top: 10%;
+        left: 0;
+    }
+    .img img{
+        width: 100%;
+    }
+}
+@media (max-width: 415px){
+    .maintext {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 380px){
+    .sec-bg01{
+        padding: 3rem 1rem !important;
+    }
+    .img{
+        top: 13%;
+    }
+    .maintext{
+        font-size: 3.3rem;
+    }
+    .sec-bg01 .py-5{
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
+@media (max-width: 325px){
+    .maintext {
+        font-size: 3rem;
+    }
+    .img {
+        top: 16%;
+    }
+}
