@@ -37,20 +37,15 @@ let pear = document.getElementById("pear");
 let freesia = document.getElementById("freesia");
 
 window.addEventListener('scroll',function(){
-    var value = -1000+window.scrollY;
+    var value = -800+window.pageYOffset;
 
-    scents.style.right = -value * 0.05 + 'px' ;
+    scents.style.right = -value * 0.3 + 'px' ;
+    pear.style.top = value * 0.3 + 'px' ;
 });
 
 window.addEventListener('scroll',function(){
-    var value = -800+window.scrollY;
+    var value = -850+window.pageYOffset;
 
-    pear.style.top = value * 0.05 + '%' ;
-});
-
-window.addEventListener('scroll',function(){
-    var value = -500+window.scrollY;
-
-    freesia.style.right = value * 0.01 + '%' ;
+    freesia.style.right = value * 0.3 + 'px' ;
 })
 

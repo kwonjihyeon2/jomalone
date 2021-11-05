@@ -12,7 +12,7 @@
     margin: 0 auto;
 }
 .img{
-    top: 8%;
+    top: 0%;
     left: 35%;
     opacity: 1;
     animation-name: show;
@@ -70,7 +70,6 @@
 .parallax{
     position: relative;
     overflow: hidden;
-    width: 50%;
     height: 350px;
     align-items: center;
 }
@@ -81,7 +80,9 @@
     /* width: 50%; */
     z-index: 99;
 }
-
+.mo-parallax{
+    display: none;
+}
 
 
 @media (max-width:1445px) {
@@ -91,10 +92,18 @@
 }
 @media (max-width: 1025px) {
     .img {
-        left: 23%;
+        left: 22%;
     }
-    
 }
+@media (max-width: 990px) {
+    .width{
+        text-align: center;
+    }
+    .parallax{
+        width: 85%;
+    }
+}
+
 @media (max-width: 770px) {
     .subtext {
         width: 65%;
@@ -103,20 +112,17 @@
         word-break: keep-all;
     }
     .img {
-        top:7%;
-        left: 12%;
+        top: 2%;
+        left: 7%;
     }
     .text{
         text-align: center !important;
-    }
-    .parallax{
-        width: 80%;
     }
     .margin{
         margin-left: 0 !important;
     }
     .bg02{
-        padding: 80px 0;
+        padding: 60px 0;
     }
     .text h1{
         margin-top: 30px;
@@ -134,7 +140,7 @@
         width: auto;
     }
     .img {
-        top: 10%;
+        top: 9%;
         left: 0;
     }
     .img img{
@@ -142,6 +148,10 @@
     }
     .parallax{
         width: 95%;
+        height: 300px;
+    }
+    .text .mt-5{
+        margin: 2rem !important;
     }
     .product{
         padding: 1rem;
@@ -149,22 +159,35 @@
 }
 @media (max-width: 415px){
     .inpd{
-        padding: 3rem 2rem !important;
+        padding: 2rem !important;
     }
     .maintext {
         font-size: 3.5rem;
     }
     .img {
-        top: 12%;
+        top: 10%;
         left: 0;
+    }
+    .parallax{
+        display: none;
+    }
+    .mo-parallax{
+        display: block;
+    }
+    .mo-parallax img{
+        width: 100%;
     }
 }
 @media (max-width: 380px){
     .inpd{
-        padding: 3rem 1rem !important;
+        padding:2rem 1rem !important;
     }
     .maintext{
         font-size: 3.3rem;
+    }
+    .img {
+        top: 6%;
+        left: 0;
     }
     .bg01 .py-5{
         padding-top: 2rem !important;
@@ -173,9 +196,12 @@
 }
 @media (max-width: 325px){
     .maintext {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     .img {
-        top: 16%;
+        top: 10%;
+    }
+    #pear{
+        width: 100%;
     }
 }
