@@ -28,3 +28,29 @@ $('.multiple-items').slick({
         }
     ]
 });
+
+
+
+//scents
+let scents = document.getElementById("scents");
+let pear = document.getElementById("pear");
+let freesia = document.getElementById("freesia");
+
+window.addEventListener('scroll',function(){
+    var value = -1000+window.scrollY;
+
+    scents.style.right = -value * 0.05 + 'px' ;
+});
+
+window.addEventListener('scroll',function(){
+    var value = -800+window.scrollY;
+
+    pear.style.top = value * 0.05 + '%' ;
+});
+
+window.addEventListener('scroll',function(){
+    var value = -500+window.scrollY;
+
+    freesia.style.right = value * 0.01 + '%' ;
+})
+
