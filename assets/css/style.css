@@ -12,7 +12,7 @@
     margin: 0 auto;
 }
 .img{
-    top: 0%;
+    top: 8%;
     left: 35%;
     opacity: 1;
     animation-name: show;
@@ -112,8 +112,8 @@
         word-break: keep-all;
     }
     .img {
-        top: 2%;
-        left: 7%;
+        top: 8%;
+        left: 10%;
     }
     .text{
         text-align: center !important;
@@ -140,7 +140,6 @@
         width: auto;
     }
     .img {
-        top: 9%;
         left: 0;
     }
     .img img{
@@ -166,7 +165,6 @@
     }
     .img {
         top: 10%;
-        left: 0;
     }
     .parallax{
         display: none;
@@ -186,8 +184,7 @@
         font-size: 3.3rem;
     }
     .img {
-        top: 6%;
-        left: 0;
+        top: 15%;
     }
     .bg01 .py-5{
         padding-top: 2rem !important;
@@ -199,7 +196,7 @@
         font-size: 2.8rem;
     }
     .img {
-        top: 10%;
+        top: 16%;
     }
     #pear{
         width: 100%;

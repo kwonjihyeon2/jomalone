@@ -1,3 +1,4 @@
+
 //collection slick
 $('.multiple-items').slick({
     dots: false,

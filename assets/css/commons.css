@@ -4,16 +4,11 @@
 body{
     font-family: 'Nanum Myeongjo', serif;
     background-color: #FCF9EE;
+
 }
 .bolder{
     font-weight: 900;
 }
 .wordbreak{
     word-break: keep-all;
-}
-#logo{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(50%,50%);
 }
