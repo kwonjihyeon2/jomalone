@@ -1,3 +1,4 @@
+AOS.init();
 
 //collection slick
 $('.multiple-items').slick({
