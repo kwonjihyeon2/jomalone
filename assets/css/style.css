@@ -18,6 +18,13 @@
     animation-name: show;
     animation-duration: 1.8s;
 }
+.list .p-5{
+    word-break: keep-all;
+}
+.list:hover img{
+    transform: translateY(-20px);
+    transition: .5s ease;
+}
 @keyframes show {
     0%{
         opacity: 0;
@@ -32,7 +39,7 @@
     background-color: #F9F8F5;
 }
 .product{
-    padding: 3rem;
+    padding: 3rem 2rem 0 2rem;
 }
 .product img{
     width: 100%;
@@ -78,21 +85,47 @@
     top:0%;
     right: 0%;
     /* width: 50%; */
+    transform: translate(0);
     z-index: 99;
 }
 .mo-parallax{
     display: none;
 }
-
+.product:nth-child(4) img{
+    transform: scale(1.2);
+}
+.cancel::after{
+    content: "";
+    position: absolute;
+    bottom:30%;
+    left: 11%;
+    background: #333;
+    width: 80px;
+    height: 1px;
+}
+.absolute{
+    position: absolute;
+    top:-50%;
+    left: 0%;
+}
+.gift img{
+    width: 100%;
+}
 
 @media (max-width:1445px) {
     .img{
         left: 32%;
     }
+    .cancel::after{
+        left: 13%;
+    }
 }
 @media (max-width: 1025px) {
     .img {
         left: 22%;
+    }
+    .cancel::after{
+        left: 11%;
     }
 }
 @media (max-width: 990px) {
@@ -127,6 +160,10 @@
     .text h1{
         margin-top: 30px;
     }
+    .cancel::after{
+        bottom: 26%;
+        left: 17%;
+    }
 }
 @media (max-width:545px) {
     .padding-commons{
@@ -155,6 +192,10 @@
     .product{
         padding: 1rem;
     }
+    .cancel::after {
+        bottom: 30%;
+        left: 11%;
+    }
 }
 @media (max-width: 415px){
     .inpd{
@@ -174,6 +215,13 @@
     }
     .mo-parallax img{
         width: 100%;
+    }
+    .list .px-5{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+    .cancel::after {
+        left: 7%;
     }
 }
 @media (max-width: 380px){
@@ -200,5 +248,13 @@
     }
     #pear{
         width: 100%;
+    }
+    .list .px-5{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .cancel::after {
+        bottom: 26%;
+        left: 10%;
     }
 }
