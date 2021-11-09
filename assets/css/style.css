@@ -1,8 +1,5 @@
 @import url("commons.css");
 
-.bg01{
-    background-color: #FCF9EE;
-}
 .maintext{
     font-size: 4.8rem;
     margin-bottom: 10px;
@@ -18,26 +15,30 @@
     animation-name: show;
     animation-duration: 1.8s;
 }
-.list .p-5{
-    word-break: keep-all;
-}
-.list:hover img{
-    transform: translateY(-20px);
-    transition: .5s ease;
-}
-@keyframes show {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-.bg02{
+/* intro>firstdiv end */
+.scents-bg{
     margin: 0 auto;
     padding: 120px 0;
     background-color: #F9F8F5;
 }
+.parallax{
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    align-items: center;
+}
+.parallax img{
+    position: absolute;
+    top:0%;
+    right: 0%;
+    /* width: 50%; */
+    transform: translate(0);
+    z-index: 99;
+}
+.mo-parallax{
+    display: none;
+}
+/* intro>seconddiv end */
 .product{
     padding: 3rem 2rem 0 2rem;
 }
@@ -73,34 +74,34 @@
     font-family: 'xeicon';
     color: black;
 }
-
-.parallax{
-    position: relative;
-    overflow: hidden;
-    height: 350px;
-    align-items: center;
-}
-.parallax img{
-    position: absolute;
-    top:0%;
-    right: 0%;
-    /* width: 50%; */
-    transform: translate(0);
-    z-index: 99;
-}
-.mo-parallax{
-    display: none;
-}
 .product:nth-child(4) img{
     transform: scale(1.2);
+}
+.list .p-5{
+    word-break: keep-all;
+}
+.list:hover img{
+    transform: translateY(-20px);
+    transition: .5s ease;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.cancel{
+    margin-left: 30px;
 }
 .cancel::after{
     content: "";
     position: absolute;
     bottom:30%;
-    left: 11%;
+    left: 20%;
     background: #333;
-    width: 80px;
+    width: 100px;
     height: 1px;
 }
 .absolute{
@@ -108,19 +109,27 @@
     top:-50%;
     left: 0%;
 }
+/* intro>thirddiv end */
 .gift img{
     width: 100%;
 }
-.num{
+.limit-word{
     position: absolute;
-    top:0%;
-    right:13%;
+    top:2%;
+    right:2%;
     background: #000;
     color: #fff;
     border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    box-shadow: 2px 2px 5px #333;
+    width: 85px;
+    height: 85px;
+    box-shadow: 2px 2px 8px #333;
+}
+.limit-word h4{
+    line-height: 85px;
+}
+/* special gifts section end */
+.service{
+    padding:100px 0;
 }
 
 @media (max-width:1445px) {
@@ -128,7 +137,10 @@
         left: 32%;
     }
     .cancel::after{
-        left: 13%;
+        left: 23%;
+    }
+    .list .px-5{
+        padding-right: 2rem !important;
     }
 }
 @media (max-width: 1025px) {
@@ -136,7 +148,10 @@
         left: 22%;
     }
     .cancel::after{
-        left: 11%;
+        left: 18%;
+    }
+    .list .px-5{
+        padding-right: 3rem !important;
     }
 }
 @media (max-width: 990px) {
@@ -146,6 +161,7 @@
     .parallax{
         width: 85%;
     }
+    /* intro>seconddiv end */
     .d-flex{
         flex-direction: column;
     }
@@ -154,7 +170,6 @@
 @media (max-width: 770px) {
     .subtext {
         width: 65%;
-        margin: 0 auto;
         text-align: left;
         word-break: keep-all;
     }
@@ -162,22 +177,33 @@
         top: 8%;
         left: 10%;
     }
+    /* intro>firstdiv end */
     .text{
         text-align: center !important;
     }
     .margin{
         margin-left: 0 !important;
     }
-    .bg02{
+    .scents-bg{
         padding: 60px 0;
     }
     .text h1{
         margin-top: 30px;
     }
-    .cancel::after{
-        bottom: 26%;
-        left: 17%;
+    /* intro>seconddiv end */
+    .list .px-5{
+        padding-left: 1rem !important;
+        padding-right: 1.5rem !important;
     }
+    .cancel{
+        margin-left: 0px;
+    }
+    .cancel::after {
+        bottom: 30%;
+        width: 90px;
+        left: 5%;
+    }
+    /* intro>thirddiv end */
     .gift{
         padding: 20px 0px 30px 0;
     }
@@ -194,7 +220,7 @@
         font-size: 4.5rem;
     }
     .subtext{
-        width: auto;
+        width: 90%;
     }
     .img {
         left: 0;
@@ -202,6 +228,7 @@
     .img img{
         width: 100%;
     }
+    /* intro>firstdiv end */
     .parallax{
         width: 95%;
         height: 300px;
@@ -209,12 +236,16 @@
     .text .mt-5{
         margin: 2rem !important;
     }
+    /* intro>seconddiv end */
     .product{
         padding: 1rem;
     }
+    .list .px-5{
+        padding-left: 2rem !important;
+        padding-right: 3rem !important;
+    }
     .cancel::after {
-        bottom: 30%;
-        left: 11%;
+        left: 8%;
     }
 }
 @media (max-width: 415px){
@@ -225,8 +256,9 @@
         font-size: 3.5rem;
     }
     .img {
-        top: 10%;
+        top: 12%;
     }
+    /* intro>firstdiv end */
     .parallax{
         display: none;
     }
@@ -236,15 +268,14 @@
     .mo-parallax img{
         width: 100%;
     }
-    .list .px-5{
-        padding-left: 2rem !important;
-        padding-right: 2rem !important;
-    }
-    .cancel::after {
-        left: 7%;
-    }
+    /* intro>seconddiv end */
     .gift img{
         width: 100%;
+    }
+    /* intro>thirddiv end */
+    .special-gifts div .py-5{
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
     }
 }
 @media (max-width: 380px){
@@ -258,11 +289,14 @@
         font-size: 3.3rem;
     }
     .img {
-        top: 15%;
+        top: 10%;
     }
-    .bg01 .py-5{
+    .intro-bg .py-5{
         padding-top: 2rem !important;
         padding-bottom: 2rem !important;
+    }
+    .cancel::after {
+        width: 80px;
     }
 }
 @media (max-width: 325px){
@@ -270,17 +304,11 @@
         font-size: 2.8rem;
     }
     .img {
-        top: 16%;
+        top: 12%;
     }
+    /* intro>firstdiv end */
     #pear{
         width: 100%;
     }
-    .list .px-5{
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
-    }
-    .cancel::after {
-        bottom: 26%;
-        left: 10%;
-    }
+    /* intro>seconddiv end */
 }

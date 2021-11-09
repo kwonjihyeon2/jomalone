@@ -12,3 +12,6 @@ body{
 .wordbreak{
     word-break: keep-all;
 }
+.intro-bg{
+    background-color: #FCF9EE;
+}
