@@ -32,7 +32,7 @@
     top:0%;
     right: 0%;
     /* width: 50%; */
-    transform: translate(0);
+    transform: scale(1);
     z-index: 99;
 }
 .mo-parallax{
@@ -74,9 +74,6 @@
     font-family: 'xeicon';
     color: black;
 }
-.product:nth-child(4) img{
-    transform: scale(1.2);
-}
 .list .p-5{
     word-break: keep-all;
 }
@@ -115,8 +112,8 @@
 }
 .limit-word{
     position: absolute;
-    top:2%;
-    right:2%;
+    top:-5%;
+    right:0%;
     background: #000;
     color: #fff;
     border-radius: 100%;
@@ -127,11 +124,29 @@
 .limit-word h4{
     line-height: 85px;
 }
-/* special gifts section end */
-.service{
-    padding:100px 0;
+.service-img01{
+    background: url('../images/service01.jpg') no-repeat center;
+    height: 335px;
 }
-
+.service-img02{
+    background: url('../images/service01.jpg') no-repeat center;
+    height: 335px;
+    width: 100%;
+}
+/* .hover {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-20%,-50%);
+}
+.service-list:hover img{
+    opacity: 1;
+    filter: brightness(0.5);
+    transition: .5s ease;
+}
+.service-list:hover .hover{
+    color: #fff;
+} */
 @media (max-width:1445px) {
     .img{
         left: 32%;
@@ -141,6 +156,15 @@
     }
     .list .px-5{
         padding-right: 2rem !important;
+    }
+    .limit-word {
+        top: -5%;
+        width: 70px;
+        height: 70px;
+    }
+    .limit-word h4{
+        line-height: 70px;
+        font-size: 1.3rem;
     }
 }
 @media (max-width: 1025px) {
@@ -154,6 +178,7 @@
         padding-right: 3rem !important;
     }
 }
+
 @media (max-width: 990px) {
     .width{
         text-align: center;
@@ -210,6 +235,10 @@
     .gift img{
         width: 80%;
     }
+    .limit-word {
+        top: 3%;
+        right: 8%;
+    }
 }
 @media (max-width:545px) {
     .padding-commons{
@@ -247,6 +276,10 @@
     .cancel::after {
         left: 8%;
     }
+    /* intro>thirddiv end */
+    .limit-word {
+        right: 8%;
+    }
 }
 @media (max-width: 415px){
     .inpd{
@@ -277,6 +310,9 @@
         padding-top: 1rem !important;
         padding-bottom: 1rem !important;
     }
+    .limit-word {
+        right: -3%;
+    }
 }
 @media (max-width: 380px){
     html,body{
@@ -295,8 +331,19 @@
         padding-top: 2rem !important;
         padding-bottom: 2rem !important;
     }
+    /* intro>firstdiv end */
     .cancel::after {
         width: 80px;
+    }
+    /* intro>thirddiv end */
+    .limit-word {
+        top: 5%;
+        right: -3%;
+        width: 55px;
+        height: 55px;
+    }
+    .limit-word h4{
+        line-height: 55px;
     }
 }
 @media (max-width: 325px){
