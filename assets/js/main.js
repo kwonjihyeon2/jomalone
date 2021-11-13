@@ -32,40 +32,6 @@ $('.multiple-items').slick({
 });
 
 
-
-//scents
-let scents = document.getElementById("scents");
-let pear = document.getElementById("pear");
-let freesia = document.getElementById("freesia");
-
-// window.addEventListener('scroll',function(){
-//     var value = -600+window.pageYOffset;
-
-//     scents.style.right = -value * 0.5 + 'px' ;
-//     pear.style.top = value * 0.5 + 'px' ;
-// });
-
-// window.addEventListener('scroll',function(){
-//     var value = -600+window.pageYOffset;
-
-//     freesia.style.right = value * 0.5 + 'px' ;
-// })
-
-window.addEventListener('scroll',function(){
-    var value = -750+window.pageYOffset;
-
-    if( window.pageYOffset>=600 && window.pageYOffset<800){
-        scents.style.transform = scale(value * 2) ;
-        pear.style.top = value * 0.5 + 'px' ;
-        freesia.style.right = value * 0.5 + 'px' ;
-    }
-    // else if (window.pageYOffset<600){
-    //     scents.style.right= "-35px";
-    //     freesia.style.right= "35px";
-    //     pear.style.top='35px';
-    // }
-})
-
 //service slick
 $('.one-time').slick({
     dots:true,
