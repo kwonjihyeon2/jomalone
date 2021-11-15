@@ -1,5 +1,14 @@
 AOS.init();
 
+//modal
+const closeButton = document.querySelector(".xi-close");
+const modal = document.querySelector(".modal")
+
+function closeModal(){
+    modal.style.display = "none";
+}
+closeButton.addEventListener("click", closeModal);
+
 //collection slick
 $('.multiple-items').slick({
     dots: false,
