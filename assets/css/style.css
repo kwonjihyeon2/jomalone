@@ -254,10 +254,11 @@ footer img{
         left: 22%;
     }
     .cancel::after{
-        left: 18%;
+        bottom: 35%;
+        left: 13%;
     }
     .list .px-5{
-        padding-right: 3rem !important;
+        padding-left: 2rem !important;
     }
     .width .col-lg-6{
         padding-left: 0 !important;
@@ -281,17 +282,13 @@ footer img{
     .width .d-block img{
         height: 350px;
     }
-    .width .d-lg-none{
-        z-index: 5;
-    }
-    .width .mo-scents{
-        top: 5%;
-        left: 13%;
-        z-index: -1;
-    }
     /* intro>seconddiv end */
     .d-flex{
         flex-direction: column;
+    }
+    .cancel::after {
+        bottom: 30%;
+        left: 17%;
     }
     /* special gifts section end */
     .pc-title{
